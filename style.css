@@ -1,0 +1,778 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+    transition: all 0.3s ease;
+
+}
+
+/* chatgt use */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    font-family: 'Playfair Display', serif;
+}
+p, li, button {
+    font-family: 'Poppins', sans-serif;
+}
+button {
+    cursor: pointer;
+}
+
+button:hover {
+    background: white;
+    color: rgb(23, 31, 20);
+    transform: translateY(-3px);
+}
+.leftherocard:hover,
+.horizontalcard:hover,
+.horizontalcard2:hover,
+.section4cards:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+img {
+    transition: transform 0.4s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+ul li a {
+    position: relative;
+}
+
+ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0%;
+    height: 2px;
+    background: white;
+    transition: 0.3s;
+}
+
+ul li a:hover::after {
+    width: 100%;
+}
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.lefthero h1,
+.lefthero p,
+.leftherobtn {
+    animation: fadeUp 1s ease forwards;
+}
+section {
+    animation: fadeUp 1.2s ease both;
+}
+section {
+    padding: 60px 0;
+}
+
+p {
+    line-height: 1.7;
+    font-size: 16px;
+}
+.leftherocard,
+.horizontalcard,
+.horizontalcard2 {
+    background: rgba(43, 51, 40, 0.7);
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* chatgt use */
+
+
+
+
+
+.forbackground{
+    background-image: url(images/bg.jpg);
+    background-size: cover;
+}
+/* nav section start */
+
+nav{
+    /* border: 1px solid red; */
+    max-width: 100%;
+    display: flex;
+    background:rgb(23, 31, 20);
+    
+}
+.logo{
+    /* border: 1px solid black; */
+    margin-left: 10px;
+    width: 12%;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    
+}
+.logo h2{
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+}
+
+.links{
+    /* border: 1px solid white; */
+    width: 60%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+ul{
+    display: flex;
+    gap: 35px;
+}
+ul > li{
+    list-style: none;
+}
+ul > li > a{
+    text-decoration: none;
+    color: black;
+    color: white;
+}
+
+/* rightlogo design start */
+.rightlogo{
+    /* border: 1px solid white; */
+    width: 26%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/* rightlogo design end */
+/* nav section end */
+
+
+/* hero section desing start */
+.hero{
+    display: flex;
+}
+.lefthero{
+    /* border: 1px solid red; */
+    margin-top: 100px;
+    width: 50%;
+    padding-left: 130px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.lefthero h1{
+    font-size: 100px;
+    color: white;
+}
+.lefthero p{
+    width: 70%;
+    color: white;
+}
+.leftherobtn{
+    display: flex;
+    gap: 15px;
+}
+.leftherobtn button{
+    background:none;
+    border-radius: 18px;
+    color: white;
+    border:1px solid white;
+}
+.expll{
+    width: 217px;
+    height: 64px;
+}
+.leftheroicon{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.leftheroicon h3{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.leftherocard{
+    /* border: 1px solid blue; */
+    width: 350px;
+    height: 200px;
+    margin-top: 80px;
+    border-radius: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+     background:rgb(43, 51, 40);
+    backdrop-filter: blur(10px);
+}
+.leftherocard h3{
+    color: white;
+}
+.leftherocard h4{
+    text-align: center;
+    padding: 15px;
+    color: white;
+}
+.imglogo{
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.righthero{
+    width: 50%;
+    height: 550px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#card{
+    width: 412px;
+    height: 465px;
+    margin-left: 450px;
+
+}
+#img{
+    width: 460px;
+    height: 460px;
+    position: relative;
+    right: 409px;
+    bottom: 150px;
+}
+.details{
+    position: relative;
+    right: 735px;
+    top: 75px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.details button{
+    color: white;
+    width: 217px;
+    height: 54px;
+    background: none;
+    border-radius: 15px;
+    border-color: white;
+}
+.centerr{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+}
+.centerr h2{
+    font-size: 36px;
+}
+/* hero section desing end */
+
+/* section no 2 design start */
+.section_2{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.horizontalcard{
+    border: 1px solid wheat;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 1600px;
+    height: 426px;
+    border-radius: 151px;
+    backdrop-filter: blur(10px);
+}
+.horizontalcard img{
+    position: relative;
+    right: 150px;
+    bottom: 65px;
+}
+.horizontalcarddetails{
+    width: 50%;
+    display: flex;
+    padding-left: 13px;
+    flex-direction: column;
+    gap:15px;
+    color: white;
+}
+.horizontalcarddetails p{
+    width: 90%;
+}
+.horizontalcardbtn{
+    display: flex;
+    gap:15px;
+}
+.horizontalcardbtn button{
+    color: white;
+    border: 1px solid white;
+    width: 217px;
+    height: 54px;
+    background: none;
+    border-radius: 15px;
+}
+
+
+
+
+/* second card design start */
+.section_3{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.horizontalcard2{
+    
+    border: 1px solid wheat;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: end;
+    align-items: center;
+    width: 1600px;
+    height: 426px;
+    border-radius: 151px;
+     /* background:rgb(23, 31, 20); */
+    backdrop-filter: blur(10px);
+
+}
+.horizontalcard2 img{
+    position: relative;
+    right: 50px;
+    bottom: 65px;
+}
+.horizontalcarddetails2{
+    width: 50%;
+    display: flex;
+    padding-left: 13px;
+    flex-direction: column;
+    gap:15px;
+    color: white;
+}
+.horizontalcarddetails2 p{
+    width: 90%;
+}
+.horizontalcardbtn2{
+    display: flex;
+    gap:15px;
+}
+.horizontalcardbtn2 button{
+    color: white;
+    border: 1px solid white;
+    width: 217px;
+    height: 54px;
+    background: none;
+    border-radius: 15px;
+}
+/* section no 2 design end */
+
+.forbg{
+    background-color: rgb(28, 36, 22);
+}
+.belowsection1{
+    /* border: 1px solid red; */
+    /* margin-top: 30px; */
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+/* section 4 design start  */
+.forflexused{
+    border: 1px solid red;
+    width: 100%;
+    /* display: grid;
+    grid-template-rows: auto; */
+}
+.belowsection1{
+    font-size: 24px;
+}
+.section_4{
+/* border: 3px solid blue; */
+/* height: 600px; */
+margin-top: 150px;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+column-gap: 35px;
+row-gap: 115px;
+
+}
+.section4cards{
+    /* border: 1px solid black; */
+    height: 665px;
+    width:30%;
+
+}
+#second{
+    position: relative;
+    bottom: 850px;
+    right: 30px;
+}
+.section4cardsdetails{
+    /* border: 1px solid red; */
+    color: white;
+    width: 70%;
+    margin-left:72px;
+    position: relative;
+    bottom: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+.section4cardsdetails h3{
+    font-size: 32px;
+}
+/* section 4 design end */
+
+.forbackggg{
+    background-color: rgb(28, 36, 22);
+}
+
+/* section 5 design start */
+.section_5{
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* section 5 design end */
+
+
+/* section 6 design start */
+.section_6{
+    /* border: 2px solid white; */
+    margin-top: 25px;
+}
+.forsection6card{
+    /* border: 3px solid red; */
+    display: flex;
+}
+.forleftimgs6{
+    /* border: 3px solid blue; */
+    width: 50%;
+}
+.forleftimgs6 img{
+    position: relative;
+    bottom: 55px;
+    left: 85px;
+}
+.fordetailssection6{
+    /* border: 3px solid green; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 35px;
+    align-items: center;
+    padding: 35px;
+    color: white;
+}
+.fordetailssection6 button{
+    width: 217px;
+    height: 64px;
+    background: none;
+    border: 1px solid white;
+    color: white;
+    border-radius: 15px;
+}
+/* section 6 design end */
+
+
+/* footer design start */
+.footer{
+    /* border: 2px solid white; */
+    display: flex;
+}
+.footerlogo{
+    /* border: 2px solid red; */
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    color: white;
+}
+.middle{
+    /* border: 2px solid blue; */
+    width: 60%;
+    color: wheat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.middle ol{
+    list-style: none;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.searchright{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding-left: 85px;
+}
+.searchright input{
+    padding: 10px;
+}
+
+/* footer design end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media query */
+@media screen and (max-width: 600px) {
+
+    * {
+        max-width: 100%;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+    .forbackground{
+        background: none;
+        background-color: rgb(30, 38, 28);
+    }
+
+                 /* NAVBAR */
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 0;
+    }
+
+    .logo,
+    .links,
+    .rightlogo {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+                /* HERO SECTION  */
+    .hero {
+        flex-direction: column;
+    }
+
+    .lefthero {
+        width: 100%;
+        padding: 20px;
+        margin-top: 40px;
+        height: auto;
+        align-items: center;
+        text-align: center;
+    }
+
+    .lefthero h1 {
+        font-size: 42px;
+    }
+
+    .lefthero p {
+        width: 100%;
+    }
+
+    .leftherobtn {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .leftherocard {
+        width: 90%;
+        margin-top: 30px;
+    }
+
+    .righthero {
+        /* border: 1px solid white; */
+        width: 100%;
+        margin-top: 30px;
+        height: auto;
+        flex-direction: column;
+        position: static;
+    }
+
+    #card {
+        width: 250px;
+        height: auto;
+        margin: 0;
+        position: relative;
+        top: 150px;
+    }
+
+    #img {
+        width: 270px;
+        height: auto;
+        position: relative;
+        bottom: 230px;
+        left: 2px;
+        /* margin-top: -100px; */
+    }
+
+    .details {
+        /* border: 1px solid red; */
+        position: relative;
+        left: 0px;
+        top: -280px;
+    }
+
+                    /* SECTION 2 & 3  */
+    .section_2,
+    .section_3 {
+        margin-top: 60px;
+    }
+
+    .horizontalcard,
+    .horizontalcard2 {
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+        border-radius: 30px;
+        padding: 20px 0;
+    }
+
+    .horizontalcard img,
+    .horizontalcard2 img {
+        position: static;
+        width: 80%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .horizontalcarddetails,
+    .horizontalcarddetails2 {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+                    /* SECTION 4 */
+    .section_4 {
+        /* border: 1px solid white; */
+        margin-top: 80px;
+        row-gap: 50px;
+    }
+
+    .section4cards {
+        /* border: 1px solid red; */
+        width: 90%;
+        height:750px;
+        margin-top: 20px;
+    }
+
+    #second {
+        position: relative;
+        top: -780px;
+        right: 10px;
+        width: 100%;
+    }
+
+    .section4cardsdetails {
+        /* border: 1px solid blue; */
+        position: relative;
+        top: -800px;
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+                        /* SECTION 5 */
+    .section_5 {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .section_5 img {
+        width: 90%;
+    }
+
+                        /* SECTION 6  */
+    .forsection6card {
+        flex-direction: column;
+    }
+
+    .forleftimgs6,
+    .fordetailssection6 {
+        width: 100%;
+    }
+
+    .forleftimgs6 img {
+        width: 90%;
+        position: static;
+        display: block;
+        margin: auto;
+    }
+
+    .fordetailssection6 {
+        text-align: center;
+        padding: 20px;
+    }
+
+                             /* FOOTER  */
+    .footer {
+        flex-direction: column;
+        gap: 25px;
+        padding-bottom: 30px;
+    }
+
+    .footerlogo,
+    .middle,
+    .searchright {
+        width: 100%;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .middle ol {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
