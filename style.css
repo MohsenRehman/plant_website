@@ -95,7 +95,9 @@ p {
 /* chatgt use */
 
 
-
+.togle{
+    display: none;
+}
 
 
 .forbackground{
@@ -569,6 +571,7 @@ row-gap: 115px;
     * {
         max-width: 100%;
     }
+
 
     body {
         overflow-x: hidden;
